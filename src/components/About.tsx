@@ -13,19 +13,21 @@ const About = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
 
   const skills: Skill[] = [
-    { name: 'React/TypeScript', level: 95, icon: Code, color: 'from-cyan-400 to-blue-500' },
-    { name: 'JavaScript/ES6+', level: 98, icon: Globe, color: 'from-yellow-400 to-orange-500' },
-    { name: 'Node.js/Express', level: 90, icon: Server, color: 'from-green-400 to-emerald-600' },
-    { name: 'Database Design', level: 85, icon: Database, color: 'from-purple-400 to-violet-600' },
-    { name: 'Mobile Development', level: 80, icon: Smartphone, color: 'from-pink-400 to-rose-500' },
-    { name: 'UI/UX Design', level: 92, icon: Palette, color: 'from-indigo-400 to-purple-500' },
+    { name: 'Python & NumPy/Pandas', level: 92, icon: Code, color: 'from-cyan-400 to-blue-500' },
+    { name: 'Machine Learning', level: 88, icon: Target, color: 'from-yellow-400 to-orange-500' },
+    { name: 'Computer Vision (OpenCV)', level: 84, icon: Globe, color: 'from-green-400 to-emerald-600' },
+    { name: 'SQL & Data Structures', level: 86, icon: Database, color: 'from-purple-400 to-violet-600' },
+    { name: 'C/C++ Programming', level: 83, icon: Smartphone, color: 'from-pink-400 to-rose-500' },
+    { name: 'Git & Problem Solving', level: 87, icon: Server, color: 'from-indigo-400 to-purple-500' },
   ];
 
   const achievements = [
-    { icon: Award, title: '50+ Projects', description: 'Successfully delivered' },
-    { icon: Target, title: '99% Success Rate', description: 'Client satisfaction' },
-    { icon: Lightbulb, title: '3+ Years', description: 'Professional experience' },
-    { icon: Heart, title: '24/7 Support', description: 'Dedicated service' },
+    { icon: Award, title: 'Microsoft Certified: Azure AI Fundamentals', description: 'Core AI concepts and Azure AI services' },
+    { icon: Award, title: 'OCI Generative AI Professional', description: 'Generative AI and cloud-based AI workflows' },
+    { icon: Award, title: 'Applied Machine Learning in Python', description: 'Practical ML using Python tooling' },
+    { icon: Award, title: 'Introduction to Generative AI for Data Analysis', description: 'AI-assisted data analysis foundations' },
+    { icon: Award, title: 'Predictive Analysis using IBM SPSS Modular', description: 'Predictive modeling and analysis' },
+    { icon: Award, title: 'Python for Data Science, AI & Development', description: 'Python for analytics and AI development' },
   ];
 
   useEffect(() => {
@@ -60,7 +62,7 @@ const About = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-cyan-500 to-purple-600 mx-auto mb-8"></div>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            Passionate developer with a keen eye for design and a love for creating exceptional digital experiences
+            Aspiring AI/ML Engineer with strong foundations in Python development, data analysis, and intelligent system design
           </p>
         </div>
 
@@ -82,19 +84,17 @@ const About = () => {
             
             <div className="text-center lg:text-left">
               <h3 className="text-3xl font-bold text-slate-800 mb-6">
-                Creative Problem Solver & Tech Enthusiast
+                Motivated CSE (AI/ML) Student
               </h3>
               <p className="text-slate-600 leading-relaxed mb-6 text-lg">
-                Hi, I'm Naveen, a passionate and dedicated web developer with a strong focus on creating dynamic, responsive, and user-friendly web applications. I love turning ideas into interactive digital experiences using modern technologies like React, JavaScript, and Tailwind CSS.
+                I am a dedicated Computer Science student specializing in Artificial Intelligence and Machine Learning, with hands-on experience in AI/ML, data analysis, and algorithmic problem solving. My work focuses on building practical systems that combine intelligent automation with real-world usability.
               </p>
               <p className="text-slate-600 leading-relaxed mb-8 text-lg">
-                I believe in the power of clean code, thoughtful design, and continuous learning. 
-                When I'm not coding, you'll find me exploring new technologies, contributing to 
-                open-source projects, or mentoring fellow developers.
+                I have developed projects in gesture-based control, travel recommendation, and satellite-assisted crop health mapping, applying tools like Python, OpenCV, and machine learning models. I am committed to continuous learning, collaborative development, and contributing to impactful AI-driven solutions.
               </p>
               
               <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
-                {['Frontend web Development', 'React Ecosystem', 'API Design', 'Cloud Technologies' ].map((tag) => (
+                {['Artificial Intelligence', 'Machine Learning', 'Python Development', 'Computer Vision', 'Data Analysis', 'SQL'].map((tag) => (
                   <span key={tag} className="px-4 py-2 bg-gradient-to-r from-cyan-100 to-blue-100 text-slate-700 rounded-full text-sm font-medium border border-cyan-200 hover:shadow-md transition-shadow duration-300">
                     {tag}
                   </span>
@@ -141,9 +141,9 @@ const About = () => {
         {/* Achievements Section */}
         <div className={`transform transition-all duration-1000 delay-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <h3 className="text-3xl font-bold text-slate-800 text-center mb-12">
-            Achievements & Milestones
+            Certifications & Awards
           </h3>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {achievements.map((achievement, index) => {
               const IconComponent = achievement.icon;
               return (

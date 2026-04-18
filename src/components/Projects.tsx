@@ -25,85 +25,85 @@ const Projects = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
-      description: 'A comprehensive e-commerce solution with advanced features including real-time inventory management, secure payment processing, and intelligent product recommendations.',
-      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Redis'],
+      title: 'Hand Gesture Volume Controller',
+      description: 'Developed a real-time hand gesture volume control system using Python, OpenCV, and MediaPipe to enable touchless audio interaction. The project uses hand tracking and finger distance detection to adjust system volume dynamically with high accuracy and low latency. It demonstrates practical computer vision integration for intuitive human-computer interaction.',
+      image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['Python', 'OpenCV', 'MediaPipe', 'Computer Vision'],
       liveDemo: '#',
       sourceCode: '#',
-      category: 'Full Stack',
+      category: 'AI/ML',
       icon: Globe,
       featured: true,
-      stats: { stars: 124, views: 2340 },
+      stats: { stars: 98, views: 1890 },
     },
     {
       id: 2,
-      title: 'AI-Powered Task Manager',
-      description: 'Intelligent project management tool with AI-driven task prioritization, team collaboration features, and predictive analytics for project completion.',
-      image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React', 'Python', 'TensorFlow', 'Firebase', 'Material-UI'],
+      title: 'Travel Recommendation System',
+      description: 'Built a travel recommendation system that suggests personalized destinations based on user preferences and historical travel data. The model applies machine learning techniques to generate accurate recommendations and useful travel insights. It focuses on improving user experience through data-driven personalization.',
+      image: 'https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['Python', 'Machine Learning', 'Pandas', 'Recommendation System'],
       liveDemo: '#',
       sourceCode: '#',
       category: 'AI/ML',
       icon: Code,
       featured: true,
-      stats: { stars: 89, views: 1560 },
+      stats: { stars: 112, views: 2210 },
     },
     {
       id: 3,
-      title: 'Crypto Trading Dashboard',
-      description: 'Real-time cryptocurrency trading platform with advanced charting, portfolio management, and automated trading strategies.',
-      image: 'https://images.pexels.com/photos/730547/pexels-photo-730547.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['Vue.js', 'WebSocket', 'D3.js', 'Express', 'PostgreSQL'],
+      title: 'GeoAgriMap',
+      description: 'Created GeoAgriMap, a satellite-assisted land use and crop health mapping system using GPS and remote sensing data. The project processes environmental information to monitor land use and generate accurate crop health insights. It highlights the use of data analysis for agriculture-focused decision support.',
+      image: 'https://images.pexels.com/photos/1595104/pexels-photo-1595104.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['Python', 'GPS', 'Remote Sensing', 'Data Analysis'],
       liveDemo: '#',
       sourceCode: '#',
-      category: 'FinTech',
+      category: 'AI/ML',
       icon: Database,
       featured: false,
-      stats: { stars: 156, views: 3200 },
+      stats: { stars: 87, views: 1640 },
     },
     {
       id: 4,
-      title: 'Social Media App',
-      description: 'Modern social networking platform with real-time messaging, story features, and advanced privacy controls.',
-      image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React Native', 'GraphQL', 'Apollo', 'AWS', 'DynamoDB'],
+      title: 'Movie Rating Prediction',
+      description: 'Developed a machine learning model to predict movie ratings based on features such as genre, cast, and user reviews. Applied data preprocessing and regression techniques to improve prediction accuracy. Demonstrates the ability to build predictive models and analyze user-driven data.',
+      image: 'https://images.pexels.com/photos/713149/pexels-photo-713149.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['Python', 'Machine Learning', 'Regression', 'Data Preprocessing'],
       liveDemo: '#',
       sourceCode: '#',
-      category: 'Mobile',
-      icon: Smartphone,
+      category: 'AI/ML',
+      icon: Code,
       featured: true,
-      stats: { stars: 203, views: 4100 },
+      stats: { stars: 76, views: 1420 },
     },
     {
       id: 5,
-      title: 'Healthcare Analytics',
-      description: 'Comprehensive healthcare data visualization platform with patient management and predictive health analytics.',
-      image: 'https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['Angular', 'Python', 'Pandas', 'Chart.js', 'MySQL'],
+      title: 'Credit Card Fraud Detection',
+      description: 'Built a fraud detection system using machine learning algorithms to identify suspicious transactions. Performed data preprocessing and handled imbalanced datasets to improve model performance. Highlights skills in anomaly detection and financial data analysis.',
+      image: 'https://images.pexels.com/photos/4386378/pexels-photo-4386378.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['Python', 'Machine Learning', 'Anomaly Detection', 'Data Analysis'],
       liveDemo: '#',
       sourceCode: '#',
-      category: 'Healthcare',
+      category: 'AI/ML',
       icon: Database,
-      featured: false,
-      stats: { stars: 67, views: 890 },
+      featured: true,
+      stats: { stars: 91, views: 1735 },
     },
     {
       id: 6,
-      title: 'Smart Home IoT',
-      description: 'Intelligent home automation system with voice control, energy monitoring, and predictive maintenance.',
-      image: 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React', 'IoT', 'MQTT', 'Raspberry Pi', 'InfluxDB'],
+      title: 'Retail Sales Performance Dashboard',
+      description: 'Created an interactive dashboard to analyze retail sales data and track key performance metrics. Used data visualization techniques to identify trends, patterns, and business insights. Demonstrates the ability to convert raw data into actionable insights.',
+      image: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['Data Visualization', 'Dashboard', 'Analytics', 'Business Insights'],
       liveDemo: '#',
       sourceCode: '#',
-      category: 'IoT',
+      category: 'Dashboard',
       icon: Globe,
       featured: false,
-      stats: { stars: 78, views: 1200 },
+      stats: { stars: 64, views: 1180 },
     },
   ];
 
-  const categories = ['All', 'Full Stack', 'AI/ML', 'FinTech', 'Mobile', 'Healthcare', 'IoT'];
+  const categories = ['All', 'AI/ML', 'Dashboard'];
 
   const filteredProjects = projects.filter(project => {
     const matchesFilter = activeFilter === 'All' || project.category === activeFilter;
@@ -127,11 +127,11 @@ const Projects = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent mb-6">
-            Featured Projects
+            Projects
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-cyan-500 to-purple-600 mx-auto mb-8"></div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Explore my latest work showcasing innovative solutions and cutting-edge technologies
+            Selected projects from my resume focused on AI, machine learning, and computer vision
           </p>
         </div>
 

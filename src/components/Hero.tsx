@@ -95,6 +95,14 @@ const Hero = () => {
                   NAVEEN SAINI
                 </span>
               </h1>
+
+              <p className="text-base sm:text-lg lg:text-xl font-semibold text-cyan-300 tracking-wide">
+                Aspiring AI/ML Engineer | Python Developer
+              </p>
+
+              <p className="text-sm sm:text-base text-cyan-100/90 max-w-2xl leading-relaxed">
+                I am passionate about building intelligent systems using machine learning, data-driven problem solving, and clean Python development practices, with a strong focus on turning real-world challenges into practical, reliable, and impactful AI-powered solutions.
+              </p>
               
               <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white/90 h-16 flex items-center">
                 <span className="border-r-2 border-cyan-400 pr-2 animate-pulse">

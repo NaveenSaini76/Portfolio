@@ -21,7 +21,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <p className="text-gray-400">
-              © 2024 Naveen. Built with React, TypeScript, and Tailwind CSS.
+              © 2024 Created by Naveen Saini. Built with React, TypeScript, and Tailwind CSS.
             </p>
             <p className="text-gray-500 mt-2 text-sm">
               Designed and developed with ❤️ for amazing user experiences.
