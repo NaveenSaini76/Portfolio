@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Code, Database, Globe, Smartphone, Server, Palette, Award, Target, Lightbulb, Heart } from 'lucide-react';
+import { Code, Database, Globe, Smartphone, Server, Target } from 'lucide-react';
 
 interface Skill {
   name: string;
@@ -19,15 +19,6 @@ const About = () => {
     { name: 'SQL & Data Structures', level: 86, icon: Database, color: 'from-purple-400 to-violet-600' },
     { name: 'C/C++ Programming', level: 83, icon: Smartphone, color: 'from-pink-400 to-rose-500' },
     { name: 'Git & Problem Solving', level: 87, icon: Server, color: 'from-indigo-400 to-purple-500' },
-  ];
-
-  const achievements = [
-    { icon: Award, title: 'Microsoft Certified: Azure AI Fundamentals', description: 'Core AI concepts and Azure AI services' },
-    { icon: Award, title: 'OCI Generative AI Professional', description: 'Generative AI and cloud-based AI workflows' },
-    { icon: Award, title: 'Applied Machine Learning in Python', description: 'Practical ML using Python tooling' },
-    { icon: Award, title: 'Introduction to Generative AI for Data Analysis', description: 'AI-assisted data analysis foundations' },
-    { icon: Award, title: 'Predictive Analysis using IBM SPSS Modular', description: 'Predictive modeling and analysis' },
-    { icon: Award, title: 'Python for Data Science, AI & Development', description: 'Python for analytics and AI development' },
   ];
 
   useEffect(() => {
@@ -138,28 +129,6 @@ const About = () => {
           </div>
         </div>
 
-        {/* Achievements Section */}
-        <div className={`transform transition-all duration-1000 delay-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-          <h3 className="text-3xl font-bold text-slate-800 text-center mb-12">
-            Certifications & Awards
-          </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {achievements.map((achievement, index) => {
-              const IconComponent = achievement.icon;
-              return (
-                <div key={index} className="group text-center">
-                  <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-white/50">
-                    <div className="bg-gradient-to-r from-cyan-500 to-purple-600 p-4 rounded-xl mb-4 mx-auto w-fit group-hover:scale-110 transition-transform duration-300">
-                      <IconComponent className="w-8 h-8 text-white" />
-                    </div>
-                    <h4 className="font-bold text-slate-800 text-xl mb-2">{achievement.title}</h4>
-                    <p className="text-slate-600">{achievement.description}</p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
       </div>
     </section>
   );
