@@ -1,17 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, Download, Mail, Github, Linkedin, Twitter, Code2, Palette, Database, Globe, Smartphone, Server, Zap, Star, Sparkles, ArrowRight, Play } from 'lucide-react';
-import { useTypingAnimation } from '../hooks/useTypingAnimation';
 
 const Hero = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isLoaded, setIsLoaded] = useState(false);
-
-  const typingText = useTypingAnimation({
-    words: ['Creative Developer', 'UI/UX Designer', 'Full Stack Engineer', 'Digital Innovator'],
-    typeSpeed: 80,
-    deleteSpeed: 40,
-    delayBetweenWords: 2000,
-  });
 
   useEffect(() => {
     setIsLoaded(true);
@@ -103,19 +95,7 @@ const Hero = () => {
               <p className="text-sm sm:text-base text-cyan-100/90 max-w-2xl leading-relaxed">
                 I am passionate about building intelligent systems using machine learning, data-driven problem solving, and clean Python development practices, with a strong focus on turning real-world challenges into practical, reliable, and impactful AI-powered solutions.
               </p>
-              
-              <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white/90 h-16 flex items-center">
-                <span className="border-r-2 border-cyan-400 pr-2 animate-pulse">
-                  {typingText}
-                </span>
-              </div>
             </div>
-
-            {/* Description */}
-            <p className="text-lg sm:text-xl text-gray-300 max-w-2xl leading-relaxed">
-              Passionate about crafting exceptional digital experiences through innovative design 
-              and cutting-edge technology. Let's build something amazing together.
-            </p>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">

@@ -79,7 +79,7 @@ const Projects = () => {
       id: 5,
       title: 'Credit Card Fraud Detection',
       description: 'Built a fraud detection system using machine learning algorithms to identify suspicious transactions. Performed data preprocessing and handled imbalanced datasets to improve model performance. Highlights skills in anomaly detection and financial data analysis.',
-      image: 'https://images.pexels.com/photos/4386378/pexels-photo-4386378.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://images.pexels.com/photos/210607/pexels-photo-210607.jpeg?auto=compress&cs=tinysrgb&w=800',
       technologies: ['Python', 'Machine Learning', 'Anomaly Detection', 'Data Analysis'],
       liveDemo: '#',
       sourceCode: '#',
